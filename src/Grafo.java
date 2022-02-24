@@ -36,7 +36,7 @@ public class Grafo<E> {
 			for (int j = 0; j < n; j++) {
 				distanciaMinima[i][j] = matrizGrafo[i][j];
 				if(i!=j) {
-				nodoAnterior[i][j] = nodos.get(i);
+				nodoAnterior[j][i] = nodos.get(i);
 				}
 			}
 		}
